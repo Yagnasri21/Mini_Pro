@@ -16,6 +16,15 @@ header .logo h1 {
     margin: 0;
 }
 
+.grid-container {
+    text-align: center; /* Center text if needed */
+}
+
+img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
 nav {
     display: flex;
     justify-content: center;
