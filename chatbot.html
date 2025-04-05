@@ -1,0 +1,31 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">Welcome to Our College</div>
+
+    <div class="container">
+        <h2>About Our College</h2>
+        <p>We offer a variety of courses and programs to help you achieve your academic goals.</p>
+    </div>
+
+    <button class="chat-toggle" onclick="toggleChat()">Chat with RISHI</button>
+
+    <div class="chatbot" id="chatbot">
+        <div class="chat-header" onclick="toggleChat()">Rishi</div>
+        <div class="chat-body" id="chat-body">
+            <div class="chat-message bot"><strong>Rishi:</strong> Hello! I'm Rishi. How can I assist you today?</div>
+        </div>
+        <input type="text" class="chat-input" id="chat-input" placeholder="Chat with RISHI..." onkeypress="handleKeyPress(event)">
+        <button class="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
